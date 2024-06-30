@@ -3,14 +3,16 @@ pragma solidity ^0.8.0;
 
 contract calculation {
 
+    // First
+
     function division(int dividend, int divisor) public pure returns (int) {
         require(divisor != 0, "Division by zero is not possible");
 
         return dividend / divisor;
     }
-}
 
-contract myArray {
+    //Second
+
     int[] private customArray;
 
     function add(int value) public {
@@ -22,12 +24,12 @@ contract myArray {
 
         return customArray[index];
     }
-}
 
-contract rewards {
+    // Third
+
     bool public isSubscribedOnYt = true;
     bool public isFollowedOnInsta = true;
-    bool public isRepostedOnX = false;
+    bool public isRepostedOnX = true;
 
     mapping(address => uint) balances;
 
